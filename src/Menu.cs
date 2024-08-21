@@ -10,7 +10,7 @@ public class Menu
 {
     private ArrayList dishes = new ArrayList();
 
-    private void AddDish(object Dish)
+    public void AddDish(object Dish)
     {
         if (Dish != null){
         this.dishes.Add(Dish);}
@@ -20,7 +20,7 @@ public class Menu
         }
     }
 
-    private void RemoveDish(object Dish)
+    public void RemoveDish(object Dish)
     {
         if (Dish != null)
         {
@@ -32,7 +32,7 @@ public class Menu
         }
         }
 
-    private Dish GetDishByName(string nombre)
+    public Dish GetDishByName(string nombre)
     {
         foreach (Dish VARIABLE in this.dishes)
         {
