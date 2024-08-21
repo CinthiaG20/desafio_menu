@@ -12,4 +12,9 @@ public class Table
     {
         return this.order.Count > 0;
     }
+
+    public void AddOrder(Dish dish)
+    {
+        throw new NotImplementedException();
+    }
 }
