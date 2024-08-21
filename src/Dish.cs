@@ -14,8 +14,8 @@ public class Dish
         set { name = value ; }
     }
 
-    private int price;                  //Atributo precio
-    public int Price
+    private double price;                  //Atributo precio
+    public double Price
     {
         get { return price; }
         set { price = value ; }
@@ -28,7 +28,7 @@ public class Dish
         set { isVegetarian = value; }
     }
 
-    public Dish(string name, int price, bool isVegetarian)          //Metodo Constructor
+    public Dish(string name, double price, bool isVegetarian)          //Metodo Constructor
     {
         this.Name = name;
         this.Price = price;
