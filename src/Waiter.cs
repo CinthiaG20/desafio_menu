@@ -34,7 +34,7 @@ public class Waiter //se crea la clase waiter
     {
         if (assignedTables.Contains(table))
         {
-            table.AddtoOrder(dish);
+            table.AddToOrder(dish);
             return "Platillo agregado con exito";
         }
         else
