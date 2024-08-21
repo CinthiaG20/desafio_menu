@@ -11,9 +11,9 @@ public class Table
 
     public int Number
     {
-        get { return Number; } set {
+        get { return number; } set {
             
-                Number = value;
+                number = value;
             
         }
     }
