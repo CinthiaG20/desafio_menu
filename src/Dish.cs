@@ -5,5 +5,4 @@ namespace Ucu.Poo.Restaurant;
 /// </summary>
 public class Dish
 {
-    
 }
