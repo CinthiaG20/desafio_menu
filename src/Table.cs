@@ -7,9 +7,15 @@ using System.Collections;
 /// </summary>
 public class Table
 {
-    private int number;
+    private Order order;
+    public Order Order
+    {
+        get { return order; }
+    }
+    
+    private int number;         //Atributo "Numero"
 
-    public int Number
+    public int Number           //Get Set del numero de mesa
     {
         get { return number; } set {
             
@@ -17,9 +23,9 @@ public class Table
             
         }
     }
-    private bool isOccupied;
-
-    public bool IsOccupied
+    
+    private bool isOccupied;        //atributo "esta ocupado"
+    public bool IsOccupied          //Get Set de "esta ocupado"
     {
         get { return isOccupied; } set {
             
@@ -27,31 +33,31 @@ public class Table
             
         }
     }
-    private ArrayList order = new ArrayList();
-
-    public Table (int number)
+    
+    public Table (int number)                       //Metodo "Constructor mesa"
     {
         this.number = number;
-        
+        this.order = new Order();
+
     }
-    public bool HasOrders()
+    public bool HasOrders()                         //Metodo "Si la mesa tiene ordenes"
     {
-        return this.order.Count > 0;
+        return this.order.CountOrder() > 0;
     }
 
-    public void Ocupy()
+    public void Ocupy()                             //Metodo "Ocupar mesa"
     {
         this.isOccupied = true;
     }
 
-    public void Free()
+    public void Free()                                  //Metodo "Vaciar mesa"
     {
         this.isOccupied = false;
-        this.order.Clear();
+        this.order.ClearOrder();
     }
 
-    public void AddToOrder(Dish dish)
+    public void AddToOrder(Dish dish)                   //metodo "Agregar platillo al menu"
     {
-        this.order.Add(dish);
+        this.order.AddDish(dish);
     }
 }

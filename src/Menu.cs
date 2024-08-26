@@ -8,9 +8,9 @@ using System.Collections;
 /// </summary>
 public class Menu
 {
-    private ArrayList dishes = new ArrayList();
+    private ArrayList dishes = new ArrayList();         //Atributo "Lista de platillos"
 
-    public void AddDish(object Dish)
+    public void AddDish(object Dish)                    //Metodo "Añadir platillo"
     {
         if (Dish != null){
         this.dishes.Add(Dish);}
@@ -20,7 +20,7 @@ public class Menu
         }
     }
 
-    public void RemoveDish(object Dish)
+    public void RemoveDish(object Dish)                 //Metodo "Quitar platillo"
     {
         if (Dish != null)
         {
@@ -32,7 +32,7 @@ public class Menu
         }
         }
 
-    public Dish GetDishByName(string nombre)
+    public Dish GetDishByName(string nombre)            //Metodo "Buscar platillo"
     {
         foreach (Dish VARIABLE in this.dishes)
         {
@@ -44,4 +44,4 @@ public class Menu
 
         return null;
     }
-    }
+}
